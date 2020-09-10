@@ -71,6 +71,7 @@ fn main() {
     }
 
     cfg = cfg.define("MI_BUILD_TESTS", "OFF");
+    cfg = cfg.define("MI_LOCAL_DYNAMIC_TLS", "ON");
 
     if cfg!(feature = "secure") {
         cfg = cfg.define("MI_SECURE", "ON");
